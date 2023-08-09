@@ -75,7 +75,7 @@ h4 {
 }
 
 .collage {
-  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  width: auto; /* Cambie la altura a automática para que se ajuste al contenido */
   overflow: hidden;
 }
 
