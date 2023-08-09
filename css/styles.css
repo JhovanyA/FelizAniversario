@@ -71,7 +71,6 @@ h4 {
 .imagen-container {
   width: 90vh;
   height: 90vh;
-  align-items: center;
 }
 
 .collage {
@@ -199,7 +198,7 @@ h4 {
 }
 
 .history_item {
-  line-height: 1em;
+  line-height: 1.2em;
   height: 45vh;
   width: 100vh;
   text-align: center;
@@ -208,7 +207,6 @@ h4 {
   border: 2px solid rgba(0, 0, 0, 0.096);
   border-radius: 2vw;
   padding: 2vw;
-  padding-top: 6vw;
 }
 
 .history_item:nth-child(2n) {
@@ -217,6 +215,10 @@ h4 {
 
 .history_item:nth-child(n + 2) {
   margin-top: 2vw;
+}
+
+.history-text {
+  font-size: x-large;
 }
 
 /*     Imagenes Slide     */
