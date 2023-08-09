@@ -3,109 +3,260 @@ body {
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   color: #000000;
-  font-size: 16px; /* Cambiado a medida relativa (puede ajustarse) */
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.5em;
   box-sizing: border-box;
   background-color: #f9f7f6;
 }
 
-/* Estilos para el encabezado */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+*:visited {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4vw; /* Ajuste el tamaño de fuente para dispositivos móviles */
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw; /* Ajuste el tamaño de fuente para dispositivos móviles */
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw; /* Ajuste el tamaño de fuente para dispositivos móviles */
+  text-align: center;
+  line-height: 100%;
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 2vw; /* Ajuste el tamaño de fuente para dispositivos móviles */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*     Collage     */
+
+.imagen-container {
+  width: 90vh;
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  align-items: center;
+}
+
+.collage {
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  overflow: hidden;
+}
+
+/*     Header     */
+
 .head_container {
   background: #f9f7f6;
-  padding: 20px; /* Ajustado para espaciado */
+  width: 100%;
+  position: sticky;
+  top: 0;
   text-align: center;
   z-index: 1;
 }
 
 .navigation_bar {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem; /* Cambiado a medida relativa (puede ajustarse) */
-  margin: auto;
+  font-size: 4vw; /* Ajuste el tamaño de fuente para dispositivos móviles */
 }
 
-/* Estilos para la navegación */
+.navigation_bar:hover {
+  text-decoration: underline;
+}
+
 .section-nav {
   display: flex;
   align-items: center;
+  width: 100%;
   height: 10vh;
-  padding: 0 20px; /* Ajustado para espaciado */
-  background-color: #ffffff; /* Cambiado para mejorar legibilidad */
-}
-
-/* Estilos para el cuerpo */
-.cuerpo-web {
-  padding: 10vh 5vw; /* Ajustado para espaciado y medidas relativas */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.separador {
-  height: 1vh; /* Cambiado para ajustar el separador */
-  background-color: #f9f7f6;
-}
-
-.history_container {
-  width: 80%;
-  margin: auto;
-  margin-top: 5vh;
-  padding: 2rem; /* Ajustado para espaciado */
-  text-align: center;
-  font-size: 1.2rem; /* Cambiado a medida relativa (puede ajustarse) */
-  background-color: rgba(245, 255, 157, 0.06);
-  border: 2px solid rgba(0, 0, 0, 0.096);
-  border-radius: 25px;
-}
-
-/* Estilos para títulos */
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 2.5rem; /* Cambiado a medida relativa (puede ajustarse) */
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-}
-
-h2 {
-  font-size: 2rem; /* Cambiado a medida relativa (puede ajustarse) */
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.5rem; /* Cambiado a medida relativa (puede ajustarse) */
-  text-align: center;
   margin: 0;
 }
 
-/* Estilos para imágenes */
-.item-image-table,
-.item-description-table {
-  width: 80%;
+.gif-logo {
+  width: 8vh;
+}
+
+.section-nav .navigation_bar {
+  list-style: none;
+  display: block;
+}
+
+.navigation_bar {
   margin: auto;
-  margin-bottom: 2vh;
-  padding: 1rem; /* Ajustado para espaciado */
-  border: 2px solid rgba(0, 0, 0, 0.096);
-  border-radius: 2.5vh; /* Cambiado a medida relativa (puede ajustarse) */
+}
+
+/*   Tabla    */
+
+.cuerpo-web {
+  width: 100vw;
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Agregué un ajuste para envolver los elementos en dispositivos pequeños */
+}
+
+.table-container {
+  width: 100%; /* Cambie el ancho al 100% para ocupar todo el ancho disponible */
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image-table {
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  width: 80vw; /* Ajuste el ancho para dispositivos móviles */
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+.item-description-table {
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  width: 80vw; /* Ajuste el ancho para dispositivos móviles */
+  margin: 0;
+  background-color: rgba(245, 255, 157, 0.06);
 }
 
 .image-table {
-  max-width: 100%; /* Imágenes ahora se ajustan al ancho */
-  height: auto;
-  opacity: 0.85; /* Reducido un poco para mejorar legibilidad */
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  width: 80vw; /* Ajuste el ancho para dispositivos móviles */
+  opacity: 80%;
 }
 
-/* Otros estilos */
 .description-parraph {
-  padding: 5vh 10vw; /* Ajustado para espaciado y medidas relativas */
+  padding-top: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
+
+/*     Separador     */
 
 .divider {
   border-top: 1px solid #ccc;
 }
 
-/* Estilos para el pie de página */
+.divider.double {
+  border-top: 3px double #ccc;
+}
+
+/*     Divisor Seccion    */
+
+.separador {
+  width: 100%;
+  height: 5vh; /* Ajuste la altura para dispositivos móviles */
+  background-color: #f9f7f6;
+}
+
+/*     Seccion Historia    */
+
+.history-container {
+  margin-top: 10vh; /* Ajuste el margen superior para dispositivos móviles */
+  margin-bottom: 5vh; /* Ajuste el margen inferior para dispositivos móviles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history_item {
+  line-height: 1em;
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+  width: 100%; /* Cambie el ancho al 100% para ocupar todo el ancho disponible */
+  text-align: center;
+  font-size: large;
+  background-color: rgba(245, 255, 157, 0.06);
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  border-radius: 2vw;
+  padding: 2vw;
+  padding-top: 6vw;
+}
+
+.history_item:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.history_item:nth-child(n + 2) {
+  margin-top: 2vw;
+}
+
+/*     Imagenes Slide     */
+
+#imagenes {
+  display: flex;
+  width: 80vw; /* Ajuste el ancho para dispositivos móviles */
+  height: 35vh; /* Ajuste la altura para dispositivos móviles */
+  margin: auto;
+  overflow-x: scroll; /* Agregué scroll horizontal para dispositivos pequeños */
+}
+
+#imagenes img {
+  width: 10vw; /* Ajuste el ancho para dispositivos móviles */
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+#imagenes img:hover {
+  cursor: grab;
+  width: 20vw; /* Ajuste el ancho para dispositivos móviles */
+  opacity: 1;
+  filter: contrast(110%);
+}
+
+/*     Footer    */
+
 .footer-container {
-  height: 40vh; /* Cambiado a medida relativa (puede ajustarse) */
+  width: 100%;
+  height: auto; /* Cambie la altura a automática para que se ajuste al contenido */
+}
+
+.footer {
+  width: 100%;
   background-color: #000000;
+}
+
+.imagen-footer {
+  width: 100%;
 }
