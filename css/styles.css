@@ -260,3 +260,61 @@ h4 {
 .imagen-footer {
   width: 100%;
 }
+
+/* Responsive */
+
+/* Responsive Styles */
+
+/* Adjust font sizes for smaller screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3,
+  h4 {
+    font-size: 3vw;
+  }
+
+  .history_item {
+    font-size: medium;
+    padding: 3vw;
+    width: 80vw;
+  }
+}
+
+/* Make the table responsive */
+@media screen and (max-width: 768px) {
+  .table-container {
+    width: 100vw;
+    overflow-x: auto;
+  }
+  .table {
+    flex-direction: row;
+    width: auto;
+  }
+  .item-image-table,
+  .item-description-table {
+    width: 45vw;
+  }
+}
+
+/* Adjust image sizes in the slider */
+@media screen and (max-width: 768px) {
+  #imagenes img {
+    width: 15vw;
+    opacity: 1;
+  }
+}
+
+/* Adjust footer image size */
+@media screen and (max-width: 768px) {
+  .imagen-footer {
+    width: 80%;
+    margin: auto;
+  }
+}
