@@ -65,18 +65,20 @@ h4 {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 
 /*     Collage     */
 
 .imagen-container {
-  width: 90vh;
-  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .collage {
-  height: 90vh;
-  overflow: hidden;
+  width: 80%;
 }
 
 /*     Header     */
@@ -87,7 +89,7 @@ h4 {
   position: sticky;
   top: 0;
   text-align: center;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .navigation_bar {
@@ -123,53 +125,27 @@ h4 {
 /*   Tabla    */
 
 .cuerpo-web {
-  height: 210vh;
+  max-width: 100%;
   padding-top: 10vw;
   padding-bottom: 10vw;
-  display: flex;
-  justify-content: center;
+  display: inline;
 }
 
-.table-container {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-.table {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.item-image-table {
+.item-table {
   height: 70vh;
-  width: 30vw;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.562);
-}
-
-.item-description-table {
-  height: 70vh;
-  width: 30vw;
-  margin: 0;
-  background-color: rgba(245, 255, 157, 0.06);
+  width: 80%;
+  margin: auto;
+  background-color: rgba(238, 238, 238, 0.815);
   display: flex;
-  align-items: center;
 }
 
 .image-table {
   height: 70vh;
-  width: 30vw;
   opacity: 80%;
 }
 
 .description-parraph {
-  padding-top: 5vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-bottom: 5vw;
+  padding: 10%;
 }
 
 /*     Separador     */
@@ -186,26 +162,24 @@ h4 {
 
 .separador {
   width: 100%;
-  height: 10vh;
   background-color: #f9f7f6;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 /*     Seccion Historia    */
 
 .history-container {
-  margin-top: 15vh;
-  margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .history_item {
-  line-height: 1.5vw;
+  line-height: 2vw;
   height: 45vh;
   width: 60%;
   text-align: center;
-  font-size: large;
   background-color: rgba(245, 255, 157, 0.06);
   border: 2px solid rgba(0, 0, 0, 0.096);
   border-radius: 2vw;
@@ -268,9 +242,6 @@ h4 {
 
 /* Responsive */
 
-/* Responsive Styles */
-
-/* Adjust font sizes for smaller screens */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 6vw;
@@ -292,23 +263,18 @@ h4 {
   }
 }
 
-/* Make the table responsive */
 @media screen and (max-width: 768px) {
   .table-container {
     width: 100vw;
     overflow-x: auto;
   }
-  .table {
-    flex-direction: row;
-    width: auto;
-  }
+
   .item-image-table,
   .item-description-table {
     width: 45vw;
   }
 }
 
-/* Adjust image sizes in the slider */
 @media screen and (max-width: 768px) {
   #imagenes img {
     width: 15vw;
@@ -316,7 +282,6 @@ h4 {
   }
 }
 
-/* Adjust footer image size */
 @media screen and (max-width: 768px) {
   .imagen-footer {
     width: 80%;
